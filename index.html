@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Library Management System</h1>
+        <p>Manage books and authors easily</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Add Author</h2>
+
+            <form id="authorForm">
+                <input
+                    type="text"
+                    id="authorName"
+                    placeholder="Author name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="authorCountry"
+                    placeholder="Country"
+                    required
+                >
+
+                <button type="submit">Add Author</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Authors</h2>
+            <div id="authorsList">Loading authors...</div>
+        </section>
+
+        <section class="card">
+            <h2>Add Book</h2>
+
+            <form id="bookForm">
+                <input
+                    type="text"
+                    id="bookTitle"
+                    placeholder="Book title"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="bookPrice"
+                    placeholder="Price"
+                    min="0"
+                    step="0.01"
+                    required
+                >
+
+                <select id="bookAuthor" required>
+                    <option value="">Select author</option>
+                </select>
+
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Books</h2>
+            <div id="booksList">Loading books...</div>
+        </section>
+
+        <p id="message" role="status"></p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

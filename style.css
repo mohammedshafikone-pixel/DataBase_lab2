@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+    color: #222;
+}
+
+header {
+    background: #234e70;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    padding: 11px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input,
+select {
+    flex: 1;
+    min-width: 150px;
+}
+
+button {
+    background: #234e70;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.delete-button {
+    background: #b42318;
+    margin-left: 8px;
+}
+
+.edit-button {
+    background: #287d3c;
+    margin-left: 8px;
+}
+
+.item {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#message {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+}
